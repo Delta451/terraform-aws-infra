@@ -7,3 +7,5 @@ Terraform configuration for AWS infrastructure, starting with a primary VPC defi
 - VPC with DNS support
 - Public subnets across two availability zones
 - Internet Gateway with public routing
+- Private subnets for backend workloads
+- NAT Gateway for outbound internet access
