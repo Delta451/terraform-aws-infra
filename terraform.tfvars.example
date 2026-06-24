@@ -1,0 +1,27 @@
+# terraform.tfvars - Example configuration file
+# Copy this file to terraform.tfvars and customize values for your environment
+
+project_name = "terraform-aws"
+environment  = "dev"
+region       = "ap-south-1"
+
+# VPC Configuration
+vpc_cidr = "10.0.0.0/16"
+
+# Subnet Configuration
+public_subnet_cidrs  = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs = ["10.0.3.0/24", "10.0.4.0/24"]
+
+# Availability Zones
+availability_zones = ["ap-south-1a", "ap-south-1b"]
+
+# Feature Flags
+enable_nat_gateway = true
+
+# Tags
+tags = {
+  Environment = "development"
+  ManagedBy   = "Terraform"
+  Project     = "terraform-aws-infra"
+  CreatedAt   = "2026-06-24"
+}
